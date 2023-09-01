@@ -19,7 +19,7 @@ export function ProductCard({
   ...props
 }: ProductCardProps) {
   return (
-    <div className={cn('space-y-3', className)} {...props}>
+    <div data-testid="productCard" className={cn('space-y-3', className)} {...props}>
       <div className="overflow-hidden rounded-md">
         <Image
           src={product.cover}

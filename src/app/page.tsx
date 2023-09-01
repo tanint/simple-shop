@@ -1,30 +1,31 @@
 import { Separator } from '@/components/ui/separator'
+import { featuredProducts, foodDrinkProducts, productList3 } from '@/data/products'
 import { ProductList } from '@/modules/product/components/product-list'
 
 export default function Home() {
   return (
-    <div>
-      <div className="py-4">
+    <>
+      <section aria-label="Made for You" className="py-4">
         <div className="mb-4">
           <h2 className="text-2xl font-semibold tracking-tight">Made for You</h2>
           <p className="text-sm text-muted-foreground">Your personal playlists. Updated daily.</p>
         </div>
-        <ProductList />
-      </div>
-      <div className="py-4">
+        <ProductList productList={featuredProducts} />
+      </section>
+      <section aria-label="Fruit & Vegetable" className="py-4">
         <div className="mb-4">
-          <h2 className="text-2xl font-semibold tracking-tight">Made for You</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">Fruit & Vegetable</h2>
           <p className="text-sm text-muted-foreground">Your personal playlists. Updated daily.</p>
         </div>
-        <ProductList />
-      </div>
-      <div className="py-4">
+        <ProductList productList={foodDrinkProducts} />
+      </section>
+      <section aria-label="Frozen Food" className="py-4">
         <div className="mb-4">
-          <h2 className="text-2xl font-semibold tracking-tight">Made for You</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">Frozen Food</h2>
           <p className="text-sm text-muted-foreground">Your personal playlists. Updated daily.</p>
         </div>
-        <ProductList />
-      </div>
-    </div>
+        <ProductList productList={productList3} />
+      </section>
+    </>
   )
 }
