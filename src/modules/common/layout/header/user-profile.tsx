@@ -7,7 +7,6 @@ import {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 
@@ -18,10 +17,10 @@ export function UserProfile() {
         <div role="button" className="flex cursor-pointer select-none items-center space-x-2">
           <Avatar className="h-10 w-10">
             <AvatarImage
-              src="https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80"
+              src="https://images.unsplash.com/photo-1690642143805-34aa01fdbba8?w=300&dpr=2&q=80"
               alt="@johnsnow"
             />
-            <AvatarFallback>JS</AvatarFallback>
+            <AvatarFallback>SD</AvatarFallback>
           </Avatar>
           <div>
             <p className="text-md font-medium leading-none">Sofia Davis</p>
@@ -31,8 +30,8 @@ export function UserProfile() {
       <DropdownMenuContent className="w-56" align="end" forceMount>
         <DropdownMenuLabel className="font-normal">
           <div className="flex flex-col space-y-1">
-            <p className="text-sm font-medium leading-none">John Snow</p>
-            <p className="text-xs leading-none text-muted-foreground">john@snow.com</p>
+            <p className="text-sm font-medium leading-none">Sofia Davis</p>
+            <p className="text-xs leading-none text-muted-foreground">sofia@davis.com</p>
           </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
